@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header section */
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+main hr {
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+.left {
+    font-size: 1.9rem;
+}
+
+.left li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.left li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* main section */
+.about-Section {
+    max-width: 85vw;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(18, 18, 62);
+    border-radius: 10px;
+}
+
+.about-Section h1,
+.about-Section h2 {
+    text-align: center;
+    color: rgb(170, 107, 228);
+    margin-bottom: 20px;
+}
+
+.about-Section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* footer */
+footer {
+    background-color: #0e0e1a;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 134px;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+footer .footer-right {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+.footer-first li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.footer-first li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-second ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.footer-second ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-third ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.footer-third ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-fourth ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.footer-fourth ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about-Section {
+        padding: 10px;
+    }
+
+    footer .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer>div {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}

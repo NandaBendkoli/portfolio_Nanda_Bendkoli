@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header section */
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+main hr {
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+.left {
+    font-size: 1.9rem;
+}
+
+.left li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.left li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* main section */
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 55px 0px;
+}
+
+.firstSection>div {
+    width: 40%;
+}
+
+.leftSection {
+    font-size: 2.0rem;
+}
+
+.leftSection .btn {
+    padding: 12px;
+    background-color: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.leftSection .btn a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.leftSection .btn a:hover {
+    font-size: 1.0rem;
+}
+
+.leftSection img {
+    max-width: 30%;
+    display: block;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+/* utility class */
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+#element {
+    color: rgb(170, 107, 228);
+}
+
+.text-gray {
+    color: gray;
+    padding-left: 45%px;
+}
+
+.SecHead {
+    padding-left: 41%;
+    margin-bottom: 24px;
+}
+
+.verticle-title {
+    position: relative;
+    top: -11px;
+    left: -44px;
+    width: 426px;
+    color: rgb(170, 107, 228);
+    font-size: 1.2rem;
+}
+
+.verticle-desc {
+    position: relative;
+    top: 24px;
+    width: 261px;
+    font-size: 12px;
+    left: -118px;
+    margin-bottom: -19px;
+}
+
+.img-top {
+    width: 23px;
+    position: relative;
+    top: -29px;
+    left: -6px;
+}
+
+/* second section */
+.secondSection {
+    max-width: calc(85vw - 40px);
+    margin: auto;
+    height: 65vh;
+    padding: 18px 0;
+    overflow-x: hidden;
+    top: 12px;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .box {
+    background: white;
+    width: 71vw;
+    height: 2px;
+    margin: 12px 30px;
+    display: flex;
+}
+
+.secondSection .verticle {
+    background-color: white;
+    height: 19px;
+    width: 3px;
+    margin: 0px 172px;
+}
+
+/* footer */
+footer {
+    background-color: #0e0e1a;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 134px;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+footer .footer-right {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+.footer-first li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.footer-first li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-second ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.footer-second ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-third ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.footer-third ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.footer-fourth ul li {
+    list-style: none;
+    margin: 0px 23px;
+}
+
+.footer-fourth ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .leftSection,
+    .rightSection {
+        width: 100%;
+        text-align: center;
+    }
+
+    .leftSection img {
+        margin: 0;
+    }
+
+    .rightSection img {
+        width: 100%;
+    }
+
+    .SecHead {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .text-gray {
+        text-align: center;
+    }
+
+    .verticle-title,
+    .verticle-desc {
+        text-align: center;
+        margin: 0 auto;
+        left: 0;
+    }
+
+    .secondSection {
+        height: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .secondSection .box {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondSection .verticle {
+        width: 2px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+
+    footer .footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer>div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
